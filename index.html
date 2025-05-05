@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crucigrama</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header>
+      <h1>Crucigrama Digital</h1>
+    </header>
+    <div id="main-content">
+      <div class="grid-menu">
+        <h1>Vertical</h1>
+        <ol>
+          <li>Modulo involucrado en la UI.</li>
+          <li>Procesa las peticiones del usuario.</li>
+          <li>Ejecuta la lógica del negocio.</li>
+          <li>Java Server Pages.</li>
+        </ol>
+        <h1>Horizontal</h1>
+        <ol>
+          <li>Verifica que el usuario sea quien dice ser.</li>
+          <li>Servidor web compatible con serverlet.</li>
+          <li>Es donde está alojada la página web.</li>
+          <li>Verifica los permisos del susuario.</li>
+        </ol>
+        <div class="btn">
+          <button onclick="answ()">Revelar/Ocular respuestas</button>
+        </div>
+        <div id="answers">
+          <h3>Vertical</h3>
+          <ol>
+            <li>Vista</li>
+            <li>Controlador</li>
+            <li>Modelo</li>
+            <li>JSP</li>
+          </ol>
+          <h3>Horizontal</h3>
+          <ol>
+            <li>Autenticación</li>
+            <li>Tomcat</li>
+            <li>Servidor</li>
+            <li>Autorización</li>
+          </ol>
+        </div>
+      </div>
+      <div class="grid-container">
+        <!--Fila 1-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible">
+          <input type="text" placeholder="V1" maxlength="1" />
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible">
+          <input type="text" placeholder="V2" maxlength="1" />
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!--fila 2-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!--fila 3-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!--Fila 4-->
+        <div class="box visible">
+          <input type="text" placeholder="H1" maxlength="1" />
+        </div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <!--Fila 5-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!--Fila 6-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible">
+          <input type="text" placeholder="H2" maxlength="1" />
+        </div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box visible">
+          <input type="text" placeholder="V3" maxlength="1" />
+        </div>
+        <div class="box"></div>
+        <!--Fila 7-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <!--Fila 8-->
+        <div class="box visible">
+          <input type="text" placeholder="V4" maxlength="1" />
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <!--Fila 9-->
+        <div class="box visible">
+          <input type="text" placeholder="H3" maxlength="1" />
+        </div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <!--Fila 10-->
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box"></div>
+        <!--Fila 11-->
+        <div class="box"></div>
+        <div class="box visible">
+          <input type="text" placeholder="H4" maxlength="1" />
+        </div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+        <div class="box visible"><input type="text" maxlength="1" /></div>
+      </div>
+    </div>
+  </body>
+</html>
