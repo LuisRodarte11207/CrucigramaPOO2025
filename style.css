@@ -123,4 +123,8 @@ input {
     padding: 0;
     box-sizing: content-box;
   }
+
+  input::placeholder {
+    font-size: 10px;
+  }
 }
