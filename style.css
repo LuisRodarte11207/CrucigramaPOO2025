@@ -117,4 +117,8 @@ input {
     grid-template-columns: 1fr;
     grid-template-areas: "menu" "game";
   }
+
+  .grid-container {
+    padding: 0;
+  }
 }
