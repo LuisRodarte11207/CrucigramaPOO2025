@@ -24,6 +24,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "menu game";
+  margin-bottom: 20px;
 }
 
 .grid-menu {
@@ -119,7 +120,7 @@ input {
   }
 
   .grid-container {
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     padding: 0;
     box-sizing: content-box;
   }
