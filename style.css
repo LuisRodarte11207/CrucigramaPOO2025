@@ -119,6 +119,8 @@ input {
   }
 
   .grid-container {
+    margin-top: 20px;
     padding: 0;
+    box-sizing: content-box;
   }
 }
